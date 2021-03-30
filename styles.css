@@ -1,5 +1,5 @@
 body{
-    background:#CDA2D5;
+    background:rgb(181, 165, 170);
     padding:0;
     margin:0;
     font-family: Helvetica, sans-serif;
@@ -14,7 +14,9 @@ body{
 }
 
 nav{
-    background: grey;
+    /* --- New Color for the NAV ---  */
+    background: rgb(255, 255, 255, 0.3);
+    /* background: grey; */
     /* height: 60px; */
     text-align: center;
     font-family: Georgia, serif;
@@ -46,9 +48,21 @@ nav a:hover{
 }
 .hero h2{
     position: absolute;
-    bottom:10%;
+    bottom:20%;
     right:5%;
 }
+button{
+    position:absolute;
+    bottom: 8%;
+    right:5%;
+    background: none;
+    padding:5px;
+    border:2px black solid;
+    color:black;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
 main{
     margin: 20px auto;
         /* top right bottom left */
@@ -60,7 +74,7 @@ main{
     flex-basis: 300px;
     flex-grow: 2;
     margin: 2px;
-    background: yellow;
+    background: rgb(255, 255, 255, 0.5);
     padding:30px;
 }
 
