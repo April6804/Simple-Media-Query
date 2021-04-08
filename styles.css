@@ -66,9 +66,9 @@ button{
 /* Styles for ABOUT HERO -----*/
 .about-hero{
     background-image: url("");
-    background-color: white;
+    background-color: lightgrey;
     /* ADD IMAGE NAME ABOVE */
-    height:400px;
+    height:200px;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -87,7 +87,7 @@ button{
     background-image: url("");
     background-color: lightgrey;
     /* ADD IMAGE NAME ABOVE */
-    height:400px;
+    height:200px;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -103,8 +103,8 @@ button{
 /* END CONTACT HERO STYLES ------------------ */
 
 main{
-    /* changed margin below*/
-    margin: 20px 10px;
+    /* -------- Changed margin  --------*/
+    margin: 20px 10px 20px 10px;
     /* margin:top right bottom left */
     display: flex;
     flex-wrap: wrap;
@@ -112,9 +112,10 @@ main{
 .flexItem{
     flex-basis: 300px;
     flex-grow:1;
-    /* changed margin below */
+    /* -------- Changed margin  --------*/
     margin: 1% 10px;
     background: rgb(255, 255, 255, 0.5);
+    /* -------- Changed padding  --------*/
     padding:30px;
 }
 
