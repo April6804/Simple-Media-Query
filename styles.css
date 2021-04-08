@@ -1,56 +1,180 @@
-/*Styles for mobile*/
 body{
-  background: #C3EAF7;
-  margin:0;
-  padding:0;
+    background:rgb(181, 165, 170);
+    padding:0;
+    margin:0;
+    font-family: Helvetica, sans-serif;
 }
-img{
-    max-width: 100%;
-}
+
 .logo{
-  display:block;
-  width:300px;
-  margin:2% auto 2% 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    max-width:300px;
 }
+
 nav{
+    /* --- New Color for the NAV ---  */
+    background: rgb(255, 255, 255, 0.3);
+    /* background: grey; */
+    /* height: 60px; */
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+nav a{
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+    padding:15px;
+    margin:10px;
+    display: inline-block;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* Styles for hero or feature */
+.hero{
+    background-image: url("hair-2537564_1920.jpg");
+    height:400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background stuff above */
+    /* moving text below */
+    position: relative;
+}
+.hero h2{
+    position: absolute;
+    bottom:20%;
+    right:5%;
+}
+button{
+    position:absolute;
+    bottom: 8%;
+    right:5%;
+    background: none;
+    padding:5px;
+    border:2px black solid;
+    color:black;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+/* Styles for ABOUT HERO -----*/
+.about-hero{
+    background-image: url("");
+    background-color: white;
+    /* ADD IMAGE NAME ABOVE */
+    height:400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background stuff above */
+    /* moving text below */
+    position: relative;
+}
+.about-hero h2{
+    position: absolute;
+    bottom:20%;
+    right:5%;
+}
+/* END ABOUT HERO STYLES ------------------ */
+/* Styles for CONTACT HERO -----*/
+.contact-hero{
+    background-image: url("");
+    background-color: lightgrey;
+    /* ADD IMAGE NAME ABOVE */
+    height:400px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background stuff above */
+    /* moving text below */
+    position: relative;
+}
+.contact-hero h2{
+    position: absolute;
+    bottom:20%;
+    right:5%;
+}
+/* END CONTACT HERO STYLES ------------------ */
+
+main{
+    /* changed margin below*/
+    margin: 20px 10px;
+    /* margin:top right bottom left */
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexItem{
+    flex-basis: 300px;
+    flex-grow:1;
+    /* changed margin below */
+    margin: 1% 10px;
+    background: rgb(255, 255, 255, 0.5);
+    padding:30px;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin:1% auto;
+    border: 0;
 
 }
-nav ul{
-  background:#8ACFE6;
-  width:100%;
-  text-align: center;
-  list-style-type: none;
-  padding:0;
+
+footer{
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
 }
-nav li{
-  display:inline-block;
-  padding:4%;
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color:white;
+}
+/* ABOUT STYLES START --------------*/
+
+
+
+
+/* END ABOUT STYLES---------------- */
+/* CONTACT STYLES START --------------*/
+
+
+
+
+/* END CONTACT STYLES---------------- */
+
+/* medium screen size below --------- */
+@media screen and (min-width: 700px) {
+        .logo{
+            /* width:350px; */
+        }
+        img{
+            display: inline;
+            width:30%;
+        }
+
+        .flexItem{
+            /* changed margin below */
+            margin:10px;
+
+        }
+
+
 
 }
-.wrapper{
-  margin: auto;
-  width:90%;
-  border:1px solid green;
-}
-.box{
-  width:100%;
-  margin:1%;
-  border:2px solid red;
-}
-@media only screen and (min-width: 600px){
-  nav li{
-      padding:2%;
-  }
-  .float{
-    float:left;
-  }
-  .box{
-    width:30.8%;
-    margin:1%
-  }
-  .clearfix::after{
-		content:" ";
-		clear:both;
-		display: table;
-	}
+/* large screen styles below */
+@media screen and (min-width: 1300px) {
+
+    img{
+
+    }
+
 }
